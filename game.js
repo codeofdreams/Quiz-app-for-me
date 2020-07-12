@@ -1,8 +1,8 @@
-const question = querySelector("#question");
-const choices = Array.from(querySelectorAll(".choice-text"));
-const progressText = querySelector("#progressText");
-const scoreText = querySelector("#score");
-const progressBarFull = querySelector("progressBarFull");
+const question = document.querySelector("#question");
+const choices = document.querySelectorAll(".choice-text");
+const progressText = document.querySelector("#progressText");
+const scoreText = document.querySelector("#score");
+const progressBarFull = document.querySelector("#progressBarFull");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
