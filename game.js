@@ -90,11 +90,11 @@ choices.forEach(choice => {
 
     acceptingAnswers = false;
     const selectedChoice = e.target;
-    const selectorAnswer = selectedChoice.dataset["number"];
+    const selectedAnswer = selectedChoice.dataset['number'];
 
-    let classApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+    let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-    if (classToApply === 'correct') {
+    if(classToApply === 'correct') {
       incrementScore(SCORE_POINTS);
     }
 
@@ -103,6 +103,7 @@ choices.forEach(choice => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
+
     }, 1000);
   });
 });
