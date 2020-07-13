@@ -108,6 +108,11 @@ h2 {
 
 input::placeholder {
     color: #aaa;
+    font-size: 15px;
+}
+
+input:placeholder-shown {
+  height: 25px;
 }
 
 #username {
